@@ -1,0 +1,13 @@
+<h1 class="bg-primary text-light">{{title}}</h1>
+</br></br>
+<div>
+{{#each members}}
+<div class="bg-light">
+    <img src="https://cdn.pixabay.com/photo/2014/09/05/18/32/old-books-436498_960_720.jpg" alt="book-image" width="200px" height="150px">
+    <h2>{{this.title}}</h2>
+    <p>price: {{this.price}}</p>
+    <p>description: {{this.description}}</p>
+</div>
+<hr>
+{{/each}}
+</div>

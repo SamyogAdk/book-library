@@ -1,21 +1,24 @@
 const members = [
   {
     id: 1,
-    name: 'John Doe',
-    email: 'john@gmail.com',
-    status: 'active'
+    title: 'Hamlet',
+    price: '500',
+    description: 'Book by shakesphere',
+    date: '2012'
   },
   {
     id: 2,
-    name: 'Bob Williams',
-    email: 'bob@gmail.com',
-    status: 'inactive'
+    title: 'Hundred year of solitude',
+    price: '400',
+    description: 'Book by Gabrial Garcia',
+    date: '2013'
   },
   {
     id: 3,
-    name: 'Shannon Jackson',
-    email: 'shannon@gmail.com',
-    status: 'active'
+    title: 'Half Girlfriend',
+    price: '300',
+    description: 'Romantic book',
+    date: '2013'
   }
 ];
 

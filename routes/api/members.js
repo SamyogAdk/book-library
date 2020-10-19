@@ -23,17 +23,16 @@ router.get('/:id', (req, res) => {
 router.post('/', (req, res) => {
   const newMember = {
     ...req.body,
-    id: uuid.v4(),
-    status: 'active'
+    id: uuid.v4()
   };
 
-  if (!newMember.name || !newMember.email) {
+  if (!newMember.title || !newMember.price) {
     return res.status(400).json({ msg: 'Please include a name and email' });
   }
 
   members.push(newMember);
   res.json(members);
-  // res.redirect('/');
+  res.redirect('/book');
 });
 
 // Update Member

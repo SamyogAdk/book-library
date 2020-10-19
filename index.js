@@ -20,16 +20,22 @@ app.use(express.urlencoded({ extended: false }));
 // Homepage Route
 app.get('/', (req, res) =>
   res.render('index', {
-    title: 'Member App',
+    title: 'Online book store',
     members
   })
 );
+app.get('/books',(req,res)=>{
+  res.render('book',{
+    title: 'Book List',
+    members
+  })
+})
 
 // Set static folder
 app.use(express.static(path.join(__dirname, 'public')));
 
 // Members API Routes
-app.use('/api/members', require('./routes/api/members'));
+app.use('/books.json', require('./routes/api/members'));
 
 const PORT = process.env.PORT || 5000;
 
